@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceeqine — Quality That Speaks for Itself</title>
+  <meta name="description" content="Ceeqine brings quality outdoor and home products designed for real life. From soccer goals to pool cleaners, we make your everyday better.">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.6; }
+    
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; padding: 80px 20px 60px; text-align: center; }
+    .hero h1 { font-size: 3rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+    .hero h1 span { color: #e94560; }
+    .hero p { font-size: 1.2rem; opacity: 0.85; max-width: 500px; margin: 0 auto 30px; }
+    .hero .tagline { font-size: 0.9rem; opacity: 0.6; letter-spacing: 3px; text-transform: uppercase; }
+    
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
+    .section-title { font-size: 1.8rem; font-weight: 600; margin-bottom: 8px; }
+    .section-sub { color: #666; margin-bottom: 40px; }
+    
+    /* Product Card */
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
+    .product-card { border: 1px solid #eee; border-radius: 16px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+    .product-img { width: 100%; height: 260px; object-fit: cover; background: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #ccc; font-size: 3rem; }
+    .product-body { padding: 24px; }
+    .product-body h3 { font-size: 1.2rem; margin-bottom: 8px; }
+    .product-body .price { font-size: 1.5rem; font-weight: 700; color: #e94560; margin-bottom: 12px; }
+    .product-body p { color: #555; font-size: 0.95rem; margin-bottom: 16px; }
+    .product-body .tag { display: inline-block; background: #f0f0f5; color: #555; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; margin-right: 6px; margin-bottom: 6px; }
+    
+    /* Buttons */
+    .btn { display: inline-block; padding: 12px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.2s; cursor: pointer; border: none; font-size: 1rem; }
+    .btn-primary { background: #e94560; color: #fff; }
+    .btn-primary:hover { background: #d63850; transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.3); }
+    .btn-outline:hover { border-color: #e94560; }
+    .btn-amazon { background: #ff9900; color: #fff; }
+    .btn-amazon:hover { background: #e88a00; }
+    
+    /* Features */
+    .features { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; }
+    .feature { text-align: center; padding: 24px; }
+    .feature .icon { font-size: 2rem; margin-bottom: 12px; }
+    .feature h4 { font-weight: 600; margin-bottom: 6px; }
+    .feature p { font-size: 0.9rem; color: #666; }
+    
+    /* Footer */
+    footer { background: #0f0c29; color: rgba(255,255,255,0.6); text-align: center; padding: 40px 20px; font-size: 0.85rem; }
+    footer a { color: #e94560; text-decoration: none; }
+    footer .brand { font-size: 1.2rem; font-weight: 600; color: #fff; margin-bottom: 8px; }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      section { padding: 40px 16px; }
+      .product-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <p class="tagline">Ceeqine — Est. 2026</p>
+  <h1>Quality That <span>Speaks</span> for Itself</h1>
+  <p>Outdoor gear and home essentials designed for real life. We make products that work as hard as you do.</p>
+  <a href="#products" class="btn btn-outline">Explore Products ↓</a>
+</div>
+
+<!-- Brand Story -->
+<section>
+  <h2 class="section-title">Why Ceeqine?</h2>
+  <p class="section-sub">Three things we stand by</p>
+  <div class="features">
+    <div class="feature">
+      <div class="icon">🛠️</div>
+      <h4>Built to Last</h4>
+      <p>Every product is designed for real-world use — not just to look good on a shelf.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🎯</div>
+      <h4>Purpose-Driven</h4>
+      <p>We don't make things for the sake of it. Every product solves a real problem.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🤝</div>
+      <h4>Fair & Direct</h4>
+      <p>By selling directly, we skip the middlemen. Better value for you, fairer for us.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products">
+  <h2 class="section-title">Our Products</h2>
+  <p class="section-sub">Starting with what we know best</p>
+  <div class="product-grid">
+    
+    <!-- Soccer Goal -->
+    <div class="product-card">
+      <div class="product-img">⚽</div>
+      <div class="product-body">
+        <h3>6x4 FT Soccer Goal Set</h3>
+        <div class="price">$59.99</div>
+        <p>Portable pop-up soccer goal with carry bag — perfect for backyard practice, park games, and youth training. Set of 2, includes ball and pump.</p>
+        <span class="tag">Portable</span>
+        <span class="tag">Set of 2</span>
+        <span class="tag">with Carry Bag</span>
+        <div style="margin-top: 16px;">
+          <a href="https://www.amazon.com/dp/B0H343MLMQ?tag=ceeqine-20" target="_blank" class="btn btn-amazon" style="width:100%;text-align:center;">
+            Buy on Amazon 🛒
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Pool Vacuum -->
+    <div class="product-card">
+      <div class="product-img">🏊</div>
+      <div class="product-body">
+        <h3>Cordless Pool Vacuum</h3>
+        <div class="price">$89.99</div>
+        <p>Rechargeable automatic pool cleaner with strong suction — cleans your pool floor, walls, and waterline without tangled hoses.</p>
+        <span class="tag">Cordless</span>
+        <span class="tag">Wall Climbing</span>
+        <span class="tag">Rechargeable</span>
+        <div style="margin-top: 16px;">
+          <a href="https://www.amazon.com/dp/B0H2VXSTJS?tag=ceeqine-20" target="_blank" class="btn btn-amazon" style="width:100%;text-align:center;">
+            Buy on Amazon 🛒
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Values -->
+<section style="background: #f8f8fc; border-radius: 16px; margin: 0 20px 40px; padding: 40px; max-width: 1060px;">
+  <h2 class="section-title" style="text-align:center;">Coming Soon</h2>
+  <p style="text-align:center;color:#666;max-width:500px;margin:0 auto;">
+    We're expanding our lineup. Lawn care, home storage, and more — all built with the same commitment to quality. <strong>Stay tuned.</strong>
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="brand">Ceeqine</div>
+  <p>Quality that speaks for itself.</p>
+  <p style="margin-top: 12px;">© 2026 Ceeqine. All rights reserved.</p>
+  <p style="margin-top: 4px;"><a href="mailto:hello@ceeqine.work">hello@ceeqine.work</a></p>
+</footer>
+
+</body>
+</html>
